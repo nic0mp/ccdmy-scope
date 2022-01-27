@@ -38,3 +38,5 @@ const callMyNightSky = () => {
 
 console.log(callMyNightSky());
 console.log(stars)
+// OUTPUT: Night Sky: The Moon, Sirius, The Milky Way
+// Sirius
