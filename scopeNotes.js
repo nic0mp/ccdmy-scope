@@ -16,3 +16,25 @@ const callMyNightSky = () => {
 };
 console.log(callMyNightSky())
 // output:Night Sky: The Moon, North Star, and The Milky Way
+
+// BLICK SCOPE
+const logVisibleLightWaves = () => {
+  const lightWaves = 'Moonlight';
+  console.log(lightWaves);
+};
+logVisibleLightWaves();
+console.log(lightWaves)
+// OUTPUT: 'Moonlight'
+
+// SCOPE POLLUTION
+const satellite = 'The Moon';
+const galaxy = 'The Milky Way';
+let stars = 'North Star';
+
+const callMyNightSky = () => {
+  stars = 'Sirius';
+	return 'Night Sky: ' + satellite + ', ' + stars + ', ' + galaxy;
+};
+
+console.log(callMyNightSky());
+console.log(stars)
