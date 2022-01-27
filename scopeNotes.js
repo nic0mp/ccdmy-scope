@@ -40,3 +40,19 @@ console.log(callMyNightSky());
 console.log(stars)
 // OUTPUT: Night Sky: The Moon, Sirius, The Milky Way
 // Sirius
+
+// good scoping PRACTICE
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if (region === 'The Arctic') {
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves)
+  } 
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves();
+// OUTPUT:Northern Lights
+// Moonlight
